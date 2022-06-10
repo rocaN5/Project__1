@@ -1,0 +1,172 @@
+/* ••• About SECTION ••• */
+
+section.about{
+    position: relative;
+    display: block;
+    width: 100%;
+
+    & .content__box{
+        margin-top: 100px;
+        
+        & .about__container{
+
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            @media screen and (max-width: 768px){
+                flex-flow: column;
+            }
+
+            & h3{
+                font-family: 'Open Sans Condensed';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 21px;
+                line-height: 29px;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: #fff;
+                margin-bottom: 40px;
+                // white-space: nowrap;
+            }
+
+            &__text{
+                min-width: 450px;
+                @media screen and (max-width: 768px){
+                    min-width: unset;
+                    text-align: center;
+                }
+
+                & p{
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 150%;
+                    color: #fff;
+                    max-width: 448px;
+
+                    @media screen and (max-width: 768px){
+                        max-width: unset;
+                        width: 503px;
+                        transform: translateX(-50%);
+                        left: 50%;
+                        position: relative;
+                    }
+
+                    @media screen and (max-width: 576px){
+                        max-width: unset;
+                        width: unset;
+                        transform: unset;
+                        left: unset;
+                        position: relative;
+                    }
+
+                    @media screen and (max-width: 460px){
+                        max-width: unset;
+                        width: unset;
+                        transform: unset;
+                        left: unset;
+                        position: relative;
+                        text-align: justify;
+                    }
+                }
+            }
+
+            &__numbers{
+                margin-left: 30px;
+                min-width: 184px;
+                margin-top: unset;
+
+                & h3{
+                    text-align: unset;
+
+                    @media screen and (max-width: 768px){
+                        text-align: center;                        
+                    }
+                }
+
+                &__box{
+                    & h4{
+                        font-family: 'Open Sans Condensed';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 22px;
+                        letter-spacing: 0.05em;
+                        color: #fff;
+                        margin-top: 12px;
+    
+                        & span{
+                            color: $color-1;
+                        }
+
+                        @media screen and (max-width: 768px){
+                            text-align: center;
+                        }
+                    }
+
+                    &-1{
+                        margin-bottom: 22px;
+
+                        @media screen and (max-width: 390px){
+                            display: flex;
+                            justify-content: center;
+                            flex-direction: column;
+                            align-items: center;
+                        }
+                    }
+
+                    &-2{
+                        margin-bottom: 22px;
+
+                        @media screen and (max-width: 390px){
+                            display: flex;
+                            justify-content: center;
+                            flex-direction: column;
+                            align-items: center;
+                        }
+                    }
+
+                    @media screen and (max-width: 768px){
+                        display: flex;
+                        justify-content: space-evenly;    
+                    }
+
+                    @media screen and (max-width: 390px){
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                }
+
+                @media screen and (max-width: 768px){
+                    margin-top: 40px;
+                    margin-left: unset;
+                    min-width: unset;
+                }
+                
+            }
+
+            &__img{
+                position: relative;
+                align-items: center;
+                display: flex;
+
+                @media screen and (max-width: 1740px){
+                    display: none;
+                }
+                
+                & img{
+                    width: 100%;
+                    max-width: 350px;
+                    max-height: 292px;
+                }
+            }
+        }
+    }
+}
+
+/* ••• About SECTION End ••• */

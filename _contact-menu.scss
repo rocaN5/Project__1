@@ -1,0 +1,131 @@
+/* ••• Contact-menu SECTION ••• */
+
+section.contatct{
+    width: 150px;
+    height: 100%;
+    position: fixed;
+    display: block;
+    background-color:#333333BF;
+    transition: $trans-default;
+    z-index: 9;
+
+    @media screen and (max-width: 992px){
+        display: none;
+    }
+
+    &:hover{
+        background-color: $color-2;
+
+        & svg, path{
+            fill-opacity: 1;
+            transition: $trans-default;
+        }
+
+        & .line{
+            background-color: #C4C4C4 !important;
+            opacity: 1 !important;
+        }
+
+        & p{
+            opacity: 1 !important;
+        }
+    }
+
+    & .contact__info{
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+
+        & p{
+            font-family: 'Open Sans Condensed';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 25px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #C4C4C4;
+            writing-mode: vertical-lr;
+            transform: rotateZ(180deg);
+            opacity: .6;
+
+            @media screen and (max-height: 557px){
+                margin-bottom: var(--menu-margin-social-links);
+            }
+
+            @media screen and (max-height: 464px){
+                display: none;
+            }
+        }
+
+        & .line{
+            width: 2px;
+            height: 80px;
+            opacity: .6;
+            margin: auto;
+            margin-top: calc(var(--menu-margin-social-links) + 10px);
+            margin-bottom: calc(var(--menu-margin-social-links) + 10px);
+            background-color: #C4C4C4BF;
+            transition: $trans-default;
+            
+            @media screen and (max-height: 626px){
+                margin-top: var(--menu-margin-social-links);
+                margin-bottom: var(--menu-margin-social-links);
+            }
+
+            @media screen and (max-height: 575px){
+                margin-top: calc(var(--menu-margin-social-links) - 10px);
+                margin-bottom: calc(var(--menu-margin-social-links) - 10px);
+            }
+
+            @media screen and (max-height: 557px){
+                display: none;
+            }
+        }
+
+        & .social__links{
+
+            margin-bottom: 86px;
+            position: relative;
+            display: block;
+            
+            
+            
+            & a{
+                display: block;
+                margin-top: var(--menu-margin-social-links);    
+                
+                &:hover{
+                    & svg, path{
+                        fill: $color-1;
+                    }
+                }
+
+                &:nth-child(1){
+                    margin-top: 0;
+                }
+
+                & svg{
+                    margin: auto;
+                    display: block;
+
+                    & path{
+                    transition: $trans-default;
+                    }
+                }
+
+                // @media screen and (max-height: 700px){
+                //     margin-top: calc(var(--menu-margin-social-links) - 10px);
+                // }
+            }
+            
+            @media screen and (max-height: 800px){
+                margin-bottom: 46px;
+            }
+        }
+    }
+}
+
+/* ••• Contact-menu SECTION End ••• */

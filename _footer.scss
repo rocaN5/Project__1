@@ -1,0 +1,30 @@
+/* ••• Footer ••• */
+
+footer{
+    margin-top: 80px !important;
+    border-top: 1px solid $color-6;
+    @include content-box;
+
+    & h3{
+        margin: 30px 0;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+        color: $color-5;
+
+        &:nth-last-child(1){
+            @media screen and (max-width: 500px){
+                margin-top: 0;
+            }
+        }
+    }
+
+    @media screen and (max-width: 500px){
+        flex-flow: column;
+        align-items: center;
+    }
+}
+
+/* ••• Footer END ••• */

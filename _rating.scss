@@ -1,0 +1,136 @@
+/* ••• Rating ••• */
+
+section.rating{
+    position: relative;
+    display: block;
+    width: 100%;
+    overflow-x: hidden;
+
+    & .rating__container{
+        position: relative;
+
+        & .content__box{
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            background-size: 100% 100% !important;
+            margin-top: 150px;
+            justify-content: center;
+            position: relative;
+            background: linear-gradient(0deg, rgba(51, 51, 51, 0.9), rgba(51, 51, 51, 0.9)), url("../img/rating/rating__bg.png");
+            
+            @media screen and (max-width: 1230px){
+                left: 0px;
+                width: 100%;
+            }
+            
+            .rating__text{
+                display: flex;
+                padding-top: 126px;
+                padding-bottom: 126px;
+                justify-content: space-evenly;
+                width: 100%;
+
+                @media screen and (max-width: 1230px){
+                    left: 50%;
+                    transform: translate(-50%);
+                    position: relative;
+                    margin-left: 75px;
+                }
+
+                @media screen and (max-width: 576px){
+                    justify-content: unset;
+                }
+
+                @media screen and (max-width: 530px){
+                    margin-left: 0;
+                    display: flex;
+                    justify-content: center;
+                }
+
+                &__years{
+                    font-family: 'Open Sans Condensed';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 72px;
+                    line-height: 98px;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    width: 182px;
+                    color: $color-1;
+
+                    @media screen and (max-width: 530px){
+                        display: none;
+                    }
+                }
+
+                &__container{
+                    align-items: center;   
+                    display: flex;
+                    flex-flow: column;
+                    justify-content: space-evenly;
+                    min-width: 470px;
+                    
+                    @media screen and (max-width: 768px){
+                        justify-content: center;
+                        align-items: unset;
+                        margin-left: 24px;
+                    }
+                    
+                    @media screen and (max-width: 530px){
+                        margin-left: 0;
+                    }
+
+                    &__stars{ 
+                        transform: translate(-50%);
+
+                        @media screen and (max-width: 768px){
+                            transform: unset;
+                        }
+                        
+                        @media screen and (max-width: 530px){
+                            justify-content: center;
+                            display: flex;
+                        }
+
+                        & svg{
+                            margin-right: 20px;
+                            float: left;
+
+                            &:nth-last-child(1){
+                                margin-right: 0;
+                            }
+                        }
+                    }
+
+                    & p{
+                        font-family: 'Open Sans';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 36px;
+                        line-height: 150%;
+                        color: #fff;
+                        margin-top: 25px;
+
+                        @media screen and (max-width: 992px){
+                            font-size: 34px;
+                        }
+
+                        @media screen and (max-width: 768px){
+                            font-size: 29px;
+                        }
+
+                        @media screen and (max-width: 576px){
+                            font-size: 25px;
+                        }
+                        
+                        @media screen and (max-width: 530px){
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ••• Rating END ••• */

@@ -1,0 +1,100 @@
+/* ••• Projects SECTION ••• */
+
+section.projects{
+    position: relative;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+
+    & .projects__container{
+
+        & .content__box{
+            width: auto;
+            left: 150px;
+            margin-top: 100px;
+            overflow: hidden;
+
+            & .slider__inner{
+                width: 100%;
+                position: relative;
+                display: flex;
+                min-height: 550px;
+
+                & .slide-1
+                    {
+                        background-image: url("../img/projects/projects__img-1.png");
+                    }
+
+                & .slide-2
+                    {
+                        background-image: url("../img/projects/projects__img-2.png");
+                    }
+
+                & .slide-3
+                    {
+                        background-image: url("../img/projects/projects__img-3.png");
+                    }
+
+                & .slide-4
+                    {
+                        background-image: url("../img/projects/projects__img-4.png");
+                    }
+                    
+                & .projects__slider__slide{
+
+                    min-width: 442px;
+                    position: relative;
+                    background-repeat: no-repeat;
+                    background-position: center;
+
+                    &__info{
+                        position: relative;
+                        display: flex;
+                        flex-flow: column;
+                        justify-content: space-between;
+                        width: 100%;
+                        height: 100%;
+                        background-color: #333333A6;
+
+                        &__title{
+                            font-family: 'Open Sans Condensed';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 24px;
+                            line-height: 33px;
+                            letter-spacing: 0.05em;
+                            text-transform: uppercase;
+                            color: #fff;
+                            padding-top: 40px;
+                            padding-left: 40px;
+                            position: relative;
+                            display: block;
+                            }
+                        
+                        &__date{
+                            font-family: 'Open Sans Condensed';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 18px;
+                            line-height: 25px;
+                            letter-spacing: 0.1em;
+                            text-transform: uppercase;
+                            color: #FFFFFF;
+                            position: relative;
+                            display: block;
+                            max-height: 24px;
+                            writing-mode: vertical-lr;
+                            white-space: nowrap;
+                            transform: rotateX(180deg) rotateY(180deg);
+                            width: 26px;
+                            margin-bottom: 40px;
+                            margin-left: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ••• Projects SECTION End ••• */
