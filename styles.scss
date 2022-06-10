@@ -45,8 +45,13 @@ button,
 select,
 a {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
-  border-radius: 0%;
+  border-radius: 0;
+  -webkit-appearance: none;
 }
+
+input[type="search"] {
+    -webkit-appearance: none;
+  }
 
 @import 'phone-menu';
 @import 'header';
