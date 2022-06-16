@@ -38,8 +38,9 @@
         @include content-box;
 
         @media screen and (max-width: 992px){
-            left: 21%;
-            width: 60%;
+            left: 0;
+            width: 100%;
+            justify-content: center;
         }
 
         @media screen and (max-width: 768px){
@@ -52,6 +53,7 @@
 
         @media screen and (max-height: 600px){
             top: 50%;
+            transform: translateY(-50%);
         }
 
         & .phone__menu__number__button{
@@ -126,6 +128,10 @@
                 margin-top: 80px;
                 line-height: 40px;
             }
+
+            @media screen and (max-height: 400px){
+                margin-bottom: 5px;
+            }
         }
 
        & p{
@@ -146,6 +152,10 @@
                 text-align: justify;
                 white-space: unset;
                 width: unset;
+            }
+
+            @media screen and (max-height: 400px){
+                margin-bottom: 25px;
             }
         }
 

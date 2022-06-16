@@ -14,7 +14,8 @@
 
 @mixin content-box-title{
     justify-content: center;
-    margin-top: 150px;
+    padding-top: 75px;
+    margin-top: 75px;
 
     & h2{
         font-family: 'Open Sans Condensed';
