@@ -162,6 +162,14 @@ section.phone__menu {
   }
 }
 
+@media screen and (max-height: 600px) {
+  section.phone__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 section.phone__menu .content__box {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -222,7 +230,7 @@ header {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px), screen and (max-height: 600px) {
   header {
     left: -100%;
     background-color: #333333;
@@ -262,7 +270,7 @@ header .header__exit__button {
   z-index: 999999;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px), screen and (max-height: 600px) {
   header .header__exit__button {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -302,7 +310,7 @@ header nav {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px), screen and (max-height: 600px) {
   header nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -337,6 +345,18 @@ header nav .nav__menu {
   }
 }
 
+@media screen and (max-height: 600px) {
+  header nav .nav__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+}
+
 header nav .nav__menu__item {
   margin-right: 4vw;
 }
@@ -347,10 +367,16 @@ header nav .nav__menu__item {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px), screen and (max-height: 600px) {
   header nav .nav__menu__item {
     margin-right: 0;
     margin-bottom: 35px;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  header nav .nav__menu__item {
+    margin-bottom: 15px;
   }
 }
 
@@ -411,7 +437,7 @@ header nav button {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px), screen and (max-height: 600px) {
   header nav button {
     display: none;
   }
@@ -456,6 +482,18 @@ header ul.header__social__links {
   }
 }
 
+@media screen and (max-height: 600px) {
+  header ul.header__social__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+  }
+}
+
 header ul.header__social__links ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -467,9 +505,30 @@ header ul.header__social__links ul {
   width: 140px;
 }
 
+@media screen and (max-height: 600px) {
+  header ul.header__social__links ul {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
 header ul.header__social__links ul li {
   width: 50px;
   height: 50px;
+}
+
+@media screen and (max-height: 600px) {
+  header ul.header__social__links ul li a {
+    width: 50px;
+    height: 50px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 header ul.header__social__links ul li:hover svg, header ul.header__social__links ul li:hover path, header ul.header__social__links ul li:focus svg, header ul.header__social__links ul li:focus path, header ul.header__social__links ul li:active svg, header ul.header__social__links ul li:active path {
@@ -481,6 +540,12 @@ header ul.header__social__links ul li:hover svg, header ul.header__social__links
 
 header ul.header__social__links ul:nth-last-child(1) {
   margin-top: 50px;
+}
+
+@media screen and (max-height: 600px) {
+  header ul.header__social__links ul:nth-last-child(1) {
+    margin-top: unset;
+  }
 }
 
 header.active {
@@ -537,6 +602,12 @@ section.black__popup__active {
   }
 }
 
+@media screen and (max-height: 600px) {
+  .first__screen {
+    background-size: 100% 100%;
+  }
+}
+
 .first__screen .content__box {
   top: calc(50% + 45px);
   -webkit-transform: translateY(-50%);
@@ -579,6 +650,12 @@ section.black__popup__active {
     -webkit-box-pack: unset;
         -ms-flex-pack: unset;
             justify-content: unset;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .first__screen .content__box {
+    top: 50%;
   }
 }
 
@@ -837,7 +914,7 @@ section.contatct {
   z-index: 9;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 992px), screen and (max-height: 600px) {
   section.contatct {
     display: none;
   }

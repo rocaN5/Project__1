@@ -11,6 +11,10 @@ section.phone__menu{
         display: flex;
     }
 
+    @media screen and (max-height: 600px){
+        display: flex;
+    }
+
     & .content__box{
         justify-content: space-between;
         
