@@ -4,6 +4,8 @@ section.phone__menu{
     z-index: 1;
     display: none;
     top: 50px;
+    
+    z-index: 2;
 
     @media screen and (max-width: 768px){
         display: flex;
@@ -26,6 +28,22 @@ section.phone__menu{
                 transition: 300ms;
                 background-color: #222222cc !important;
                 outline: none;
+            }
+        }
+
+        & .phone__menu__button__scrolled{
+            transition: 300ms;
+            background-color: #222222 !important;
+            outline: none;
+            box-shadow: 4px 4px 9px 0px #000000bd;
+
+            &:hover,
+            &:focus,
+            &:active{
+                transition: 300ms;
+                background-color: #191919 !important;
+                outline: none;
+                box-shadow: 4px 4px 9px 0px #000000bd;
             }
         }
     }

@@ -20,6 +20,10 @@ body{
     background-color: $color-2;
 }
 
+body.black__popup{
+    overflow: hidden;
+}
+
 section .content__box{
     @include content-box;
     
@@ -49,12 +53,17 @@ a {
   -webkit-appearance: none;
 }
 
+input {
+    border-radius: 0;
+  }
+  
 input[type="search"] {
     -webkit-appearance: none;
   }
 
 @import 'phone-menu';
 @import 'header';
+@import 'black-popup';
 @import 'first-screen';
 @import 'contact-menu';
 @import 'about';

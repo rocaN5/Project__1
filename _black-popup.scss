@@ -1,0 +1,12 @@
+/* ••• Popup ••• */
+
+section.black__popup__active{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #00000050;
+    z-index: 1;
+    transition: $trans-default;
+}
+
+/* ••• Popup END ••• */

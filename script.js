@@ -71,11 +71,30 @@ function boundCardsSecond() {
   }
 }
 
-const toggleButton = document.getElementsByClassName('phone__menu__button')[0]
-const phoneMenu = document.getElementsByClassName('header')[0]
+// PHONE MENU ACTIVATION
 
-toggleButton.addEventListener('click', () =>{
+const toggleButton = document.getElementsByClassName('phone__menu__button')[0],
+      exitButton = document.getElementsByClassName('header__exit__button')[0],
+      phoneMenu = document.getElementsByClassName('header')[0],
+      blackPopup = document.getElementsByClassName('black__popup')[0],
+      body__class = document.getElementsByClassName('body__class')[0]
+      
+function phoneMenuToggle(){
   phoneMenu.classList.toggle('active');
+  blackPopup.classList.toggle('black__popup__active');
+  body__class.classList.toggle('black__popup');
+};
+      
+toggleButton.addEventListener('click', () =>{
+  phoneMenuToggle();
+})
+
+exitButton.addEventListener('click', () =>{
+  phoneMenuToggle();
+})
+
+blackPopup.addEventListener('click', () =>{
+  phoneMenuToggle();
 })
 
 window.addEventListener('resize', ()=> {
@@ -83,5 +102,20 @@ window.addEventListener('resize', ()=> {
   cardsSecond.style.left = `unset`;
   if (screen.width > 768) {
     phoneMenu.classList.remove('active');
+    body__class.classList.remove('black__popup');
+    blackPopup.classList.remove('black__popup__active');
   }
 }, true);
+
+window.addEventListener("scroll", function(){
+	var scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop;
+  if (scrollTop >= 150){
+    toggleButton.classList.add('phone__menu__button__scrolled');
+  }
+  else{
+    toggleButton.classList.remove('phone__menu__button__scrolled');
+  }
+
+}, false)
+
+// PHONE MENU ACTIVATION • END
