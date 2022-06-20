@@ -1,0 +1,105 @@
+@charset "UTF-8";
+/* ••• Projects SECTION ••• */
+section.projects {
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+section.projects .projects__container .content__box {
+  width: auto;
+  left: 150px;
+  margin-top: 100px;
+  overflow: hidden;
+}
+
+section.projects .projects__container .content__box .slider__inner {
+  width: 100%;
+  position: relative;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  min-height: 550px;
+}
+
+section.projects .projects__container .content__box .slider__inner .slide-1 {
+  background-image: url("../img/projects/projects__img-1.png");
+}
+
+section.projects .projects__container .content__box .slider__inner .slide-2 {
+  background-image: url("../img/projects/projects__img-2.png");
+}
+
+section.projects .projects__container .content__box .slider__inner .slide-3 {
+  background-image: url("../img/projects/projects__img-3.png");
+}
+
+section.projects .projects__container .content__box .slider__inner .slide-4 {
+  background-image: url("../img/projects/projects__img-4.png");
+}
+
+section.projects .projects__container .content__box .slider__inner .projects__slider__slide {
+  min-width: 442px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section.projects .projects__container .content__box .slider__inner .projects__slider__slide__info {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  background-color: #333333A6;
+}
+
+section.projects .projects__container .content__box .slider__inner .projects__slider__slide__info__title {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #fff;
+  padding-top: 40px;
+  padding-left: 40px;
+  position: relative;
+  display: block;
+}
+
+section.projects .projects__container .content__box .slider__inner .projects__slider__slide__info__date {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  position: relative;
+  display: block;
+  max-height: 24px;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  white-space: nowrap;
+  -webkit-transform: rotateX(180deg) rotateY(180deg);
+          transform: rotateX(180deg) rotateY(180deg);
+  width: 26px;
+  margin-bottom: 40px;
+  margin-left: 40px;
+}
+
+/* ••• Projects SECTION End ••• */
+/*# sourceMappingURL=fix_projects.css.map */

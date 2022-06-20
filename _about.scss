@@ -109,6 +109,13 @@ section.about{
 
                     &-1{
                         margin-bottom: 22px;
+                        
+                        @media screen and (max-width: 768px){
+                            justify-content: center;
+                            display: flex;
+                            flex-flow: column;
+                            align-items: center;
+                        }
 
                         @media screen and (max-width: 390px){
                             display: flex;
@@ -120,6 +127,13 @@ section.about{
 
                     &-2{
                         margin-bottom: 22px;
+
+                        @media screen and (max-width: 768px){
+                            justify-content: center;
+                            display: flex;
+                            flex-flow: column;
+                            align-items: center;
+                        }
 
                         @media screen and (max-width: 390px){
                             display: flex;

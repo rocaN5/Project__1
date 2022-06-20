@@ -109,10 +109,7 @@ window.addEventListener('resize', ()=> {
 
 window.addEventListener("scroll", function(){
 	var scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop;
-  if (scrollTop >= 750  && screen.width <= 992){
-    toggleButton.classList.add('phone__menu__button__scrolled');
-  }
-  else if (scrollTop >= 150 && screen.width <= 767){
+  if (scrollTop >= 150  && screen.width <= 992){
     toggleButton.classList.add('phone__menu__button__scrolled');
   }
   else if (scrollTop >= 60 && screen.width <= 400){
@@ -125,3 +122,16 @@ window.addEventListener("scroll", function(){
 }, false)
 
 // PHONE MENU ACTIVATION • END
+
+$('.slider__inner').slick({
+  dots: false,
+  prevArrow: false,
+  nextArrow: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  centerMode: false,
+  variableWidth: true,
+  autoplay: true,
+  autoplaySpeed: 3000,
+});
