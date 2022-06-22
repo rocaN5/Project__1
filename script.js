@@ -98,21 +98,48 @@ blackPopup.addEventListener('click', () =>{
 })
 
 window.addEventListener('resize', ()=> {
-  cards.style.left = `unset`;
-  cardsSecond.style.left = `unset`;
-  if (screen.width > 768) {
-    phoneMenu.classList.remove('active');
-    body__class.classList.remove('black__popup');
-    blackPopup.classList.remove('black__popup__active');
+  menuResizeReset();
+  const slIn = document.getElementsByClassName('slider__inner')[0].clientWidth,
+        prSlIn = document.getElementsByClassName('project__slider__slide')[0];
+
+  if (window.innerWidth <= 520) {
+    prSlIn.style.width = `${slIn}px`;
+    } 
+  else {
+    prSlIn.style.width = "50px";
   }
 }, true);
 
+function menuResizeReset(){
+  cards.style.left = `unset`;
+  cardsSecond.style.left = `unset`;
+  if (screen.width >= 768) {
+    phoneMenu.classList.remove('active');
+    body__class.classList.remove('black__popup');
+    blackPopup.classList.remove('black__popup__active');
+  } 
+}
+
+// function sliderResize(){
+//   const slIn = document.getElementsByClassName('slider__inner')[0],
+//         prSlIn = document.getElementsByClassName('project__slider__slide')[0];
+
+//   if (window.innerWidth < 520) {
+//     prSlIn.style.width = `${slIn}px`;
+//   } else  {
+//     prSlIn.style.width = "50px";
+//   }
+// }
+
 window.addEventListener("scroll", function(){
 	var scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop;
-  if (scrollTop >= 150  && screen.width <= 992){
+  if (scrollTop >= 150  && window.innerWidth <= 992){
     toggleButton.classList.add('phone__menu__button__scrolled');
   }
-  else if (scrollTop >= 60 && screen.width <= 400){
+  else if (scrollTop >= 60 && window.innerWidth <= 400){
+    toggleButton.classList.add('phone__menu__button__scrolled');
+  }
+  else if (scrollTop >= 150 && window.innerWidth <= 768){
     toggleButton.classList.add('phone__menu__button__scrolled');
   }
   else{
@@ -132,6 +159,7 @@ $('.slider__inner').slick({
   slidesToShow: 1,
   centerMode: false,
   variableWidth: true,
-  autoplay: true,
+  autoplay: false,
   autoplaySpeed: 3000,
-});
+  mobileFirst: true,
+  });

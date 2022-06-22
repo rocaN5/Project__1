@@ -2,7 +2,6 @@
 
 section.contacts{
     & .content__box{
-        margin-top: 100px;
         @media screen and (max-width: 1550px){
             flex-flow: column;
         }
